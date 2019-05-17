@@ -1,4 +1,4 @@
-;;; ethereal-mode.el --- description -*- lexical-binding: t; -*-
+;;; ethl-mode.el --- description -*- lexical-binding: t; -*-
 ;;; Commentary:
 
 ;;; Code:
@@ -28,11 +28,12 @@
     (modify-syntax-entry ?* ". 23" st)
     (modify-syntax-entry ?# "< c" st)
     (modify-syntax-entry ?\n "> c" st)
+    (modify-syntax-entry ?' "\"" st)
     st)
   "Syntax table for ethl-mode.")
 
 ;;;###autoload
-(define-derived-mode ethl-mode c-mode "Ethl"
+(define-derived-mode ethl-mode js-mode "Ethl"
 ;;(defun ethl-mode ()
   "Major mode for editing Ethereal Language files."
   (set (make-local-variable 'font-lock-defaults) '(ethl-font-lock-keywords)))
@@ -47,4 +48,4 @@
 ;;  (run-hooks 'ethl-mode-hook))
 
 (provide 'ethl-mode)
-;;; ethereal-mode.el ends here
+;;; ethl-mode.el ends here

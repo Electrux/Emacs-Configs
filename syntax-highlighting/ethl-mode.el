@@ -14,7 +14,7 @@
 
 (defconst ethl-font-lock-keywords-1
   (list
-   '("\\<\\(i\\(nclude\\|mport\\|f\\)\\|a\\(s\\|lias\\|ny\\)\\|nil\\|s\\(truct\\|can\\)\\|f\\(n\\|or\\)\\|el\\(if\\|se\\)\\|return\\|continue\\|break\\|ldmod\\|println\\)\\>" . font-lock-builtin-face)
+   '("\\<\\(i\\(nclude\\|mport\\|f\\)\\|a\\(s\\|lias\\|ny\\)\\|nil\\|s\\(truct\\|can\\)\\|f\\(n\\|or\\)\\|el\\(if\\|se\\)\\|r\\(eturn\\|aise\\)\\|continue\\|break\\|ldmod\\|println\\|typeof\\)\\>" . font-lock-builtin-face)
    '("\\('\\w*'\\)" . font-lock-variable-name-face))
   "Minimal highlighting expressions for Ethereal mode.")
 
